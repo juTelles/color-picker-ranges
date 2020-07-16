@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <div id="header-div" class="cont-divs">
+          <h1 id="title">Color Machine</h1>
+        </div>
+      </header>
+      <main>
+        <section id="colors">
+          <div id="colors-div" class="cont-divs">
+            <form action="">
+              <label for="red">
+                Red
+                <input
+                  id="red"
+                  class="sliders"
+                  type="range"
+                  value="23"
+                  name="red"
+                  min="0"
+                  max="255"
+                />
+                <input type="text" name="red" id="redValue" disabled />
+              </label>
+              Green
+              <label for="green">
+                <input
+                  id="green"
+                  class="sliders"
+                  type="range"
+                  value="55"
+                  name="green"
+                  min="0"
+                  max="255"
+                />
+                <input type="text" name="green" id="greenValue" disabled />
+              </label>
+              Blue
+              <label for="blue">
+                <input
+                  id="blue"
+                  class="sliders"
+                  type="range"
+                  value="200"
+                  name="blue"
+                  min="0"
+                  max="255"
+                />
+                <input type="text" name="blue" id="blueValue" disabled />
+              </label>
+            </form>
+          </div>
+          <div id="colorShow"></div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div id="footer-div" class="cont-divs">
+          <p id="copyright"></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
