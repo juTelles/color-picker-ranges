@@ -3,68 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Colors</title>
   </head>
   <body>
     <div id="container">
-      <header id="header">
+      <header id="header" class="sections">
         <div id="header-div" class="cont-divs">
           <h1 id="title">Color Machine</h1>
         </div>
       </header>
       <main>
-        <section id="colors">
-          <div id="colors-div" class="cont-divs">
+        <section id="colors-section" class="sections">
+          <div id="color-form-div" class="cont-divs">
             <form action="">
-              <label for="red">
-                Red
-                <input
-                  id="red"
-                  class="sliders"
-                  type="range"
-                  value="23"
-                  name="red"
-                  min="0"
-                  max="255"
-                />
-                <input type="text" name="red" id="redValue" disabled />
-              </label>
-              Green
-              <label for="green">
-                <input
-                  id="green"
-                  class="sliders"
-                  type="range"
-                  value="55"
-                  name="green"
-                  min="0"
-                  max="255"
-                />
-                <input type="text" name="green" id="greenValue" disabled />
-              </label>
-              Blue
-              <label for="blue">
-                <input
-                  id="blue"
-                  class="sliders"
-                  type="range"
-                  value="200"
-                  name="blue"
-                  min="0"
-                  max="255"
-                />
-                <input type="text" name="blue" id="blueValue" disabled />
-              </label>
+             <!-- Red -->
+              <div class="color-containers">
+                <label for="red" class="red-text"> Red</label>
+                <div class="slider-containers">
+                  <input
+                    id="red"
+                    class="sliders"
+                    type="range"
+                    value="23"
+                    name="red"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <input type="text" name="redSquare" id="redSquare" class="red-text" disabled />
+              </div>
+             <!-- Green -->
+              <div class="color-containers">
+                <label for="green" class="green-text" >Green</label>
+                <div class="slider-containers">
+                  <input
+                    id="green"
+                    class="sliders"
+                    type="range"
+                    value="55"
+                    name="green"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <input type="text" placeholder="" name="greenSquare" id="greenSquare" class="green-text" disabled />
+              </div>
+              <!-- Blue -->
+              <div class="color-containers">
+                <label for="blue" class="blue-text"> Blue </label>
+                <div class="slider-containers">
+                  <input
+                    id="blue"
+                    class="sliders"
+                    type="range"
+                    value="200"
+                    name="blue"
+                    min="0"
+                    max="255"
+                  />
+                </div>
+                <input type="text" name="blueSquare" id="blueSquare" class="blue-text" disabled />
+              </div>
             </form>
           </div>
-          <div id="colorShow"></div>
+        </section>
+        <section id="balls-section">
+          <div id="balls-div" class="div-cont">
+            <div id="one" class="balls"></div>
+            <div id="two" class="balls"></div>
+            <div id="tree" class="balls"></div>
+            <div id="four" class="balls"></div>
+            <div id="five" class="balls"></div>
+            <div id="six" class="balls"></div>
+            <div id="seven" class="balls"></div>
+            <div id="eight" class="balls"></div>
+            <div id="nine" class="balls"></div>
+            <div id="ten" class="balls"></div>
+          </div>
         </section>
       </main>
-      <footer id="footer">
+      <footer id="footer" class="sections">
         <div id="footer-div" class="cont-divs">
           <p id="copyright"></p>
         </div>
       </footer>
     </div>
+  <script src="./js/script.js"></script>
   </body>
 </html>
