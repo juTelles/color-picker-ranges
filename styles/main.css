@@ -109,11 +109,11 @@ label {
   cursor: pointer;
 }
 input[type='text'] {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 10px;
   border-radius: 5px;
-  padding-left: 10px;
+  text-align: center;
 }
 .red-text {
   color: rgb(216, 72, 72);
@@ -135,13 +135,6 @@ input[type='text'] {
 .balls {
   position: fixed;
   background-color: blueviolet;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.balls2 {
-  position: fixed;
-  background-color: green;
   width: 100px;
   height: 100px;
   border-radius: 50%;
